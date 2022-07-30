@@ -17,7 +17,9 @@ It should be noted that the one list is not saved in any database and will be de
 
 - Adding a new value to a multivalue variable
 
-- Working with Rest parameters
+- Using Rest parameters
+
+- Using "useRef" and "useState"
 
 <br>
 

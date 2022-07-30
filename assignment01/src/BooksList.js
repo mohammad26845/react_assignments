@@ -8,7 +8,7 @@ export const BooksList = () => {
     var i = 1;
 
     // Creating multi-value variable
-    var [BookList, setItem] = React.useState([
+    var [BookList, setBook] = React.useState([
         { name: 'Book title 1', pages: "10" },
         { name: 'Book title 2', pages: "85" },
         { name: 'Book title 3', pages: "64" },
@@ -31,7 +31,7 @@ export const BooksList = () => {
         }
 
         // Push Items or Set Items (Rest parameters)
-        setItem([...BookList, { name: BookName, pages: BookPages }])
+        setBook([...BookList, { name: BookName, pages: BookPages }])
 
         // Remove values after insert data
         inputRefName.current.value = "";
