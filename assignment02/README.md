@@ -6,7 +6,7 @@ This project includes four base operations and as well as reads numbers from the
 
 <br>
 
-![Calculator Screenshot](./Screenrecord.gif)
+![Calculator Screenshot](Screenrecord.gif)
 
 <br>
 
