@@ -44,7 +44,12 @@ const name = (input) => {
 
 <br>
 
+<p align="center">
+
 ![Screenshot](https://i.imgur.com/FI7Rsi8.jpg "Screenshot")
+
+</p>
+
 
 
 
