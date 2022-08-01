@@ -6,9 +6,7 @@ This project includes four base operations and as well as reads numbers from the
 
 <br>
 
-<p align="center">
-  <img src="./Screenrecord.gif">
-</p>
+![Calculator Screenshot](./Screenrecord.gif)
 
 <br>
 
@@ -59,7 +57,4 @@ const name = (input) => {
 
 ## Contributions
 
-Any feature requests and pull requests are welcome!
-
-
-
+Any feature requests and pull requests are welcome!  :white_check_mark:
