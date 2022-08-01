@@ -181,7 +181,6 @@ const App = () => {
 
         }}
         />
-        {console.log(calc)}
 
       </ButtonBox>
     </Wrapper>
