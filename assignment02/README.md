@@ -45,11 +45,8 @@ const name = (input) => {
 <br>
 
 <p align="center">
-
-![Screenshot](https://i.imgur.com/ScfcFrt.gif "Screenshot")
-
+  <img width="460" height="300" src="https://i.imgur.com/ScfcFrt.gif">
 </p>
-
 
 
 
