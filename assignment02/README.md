@@ -6,11 +6,11 @@ This project includes four base operations and as well as reads numbers from the
 
 <br>
 
-![Calculator Screenshot](Screenrecord.gif)
+![Calculator Screenshot](https://i.imgur.com/dvgkwOa.gif)
 
 <br>
 
-## Script Features :
+## Script Features
 
 - Using Arrow functions
 
@@ -30,7 +30,7 @@ This project includes four base operations and as well as reads numbers from the
 
 <br>
 
-## Difference between arrow function and regular function :
+## Difference between arrow function and regular function
 
 ```
 // Regular function
