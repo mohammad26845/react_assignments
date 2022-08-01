@@ -46,7 +46,7 @@ const name = (input) => {
 
 <p align="center">
 
-![Screenshot](https://i.imgur.com/FI7Rsi8.jpg "Screenshot")
+![Screenshot](https://i.imgur.com/ScfcFrt.gif "Screenshot")
 
 </p>
 
