@@ -25,15 +25,19 @@ const name = (input) => {
 
 - Arrow functions
 
-- Usign states and set states
+- Usign states and set state
 
-- Using hooks in function component (use...)
+- Using hooks in function component (use...) 'useState' and 'useEffect'
 
 - Installing bootstrap framework
 
-- Using and set a bootstrap progressbar
+- Using and set a bootstrap progressbar (Progressbar.js)
 
+- Listening keyboard keys
 
+- Convert string to integer :)
+
+- Foldering the components
 
 <br>
 

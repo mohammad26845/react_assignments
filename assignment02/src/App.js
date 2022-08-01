@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -102,7 +102,8 @@ const App = () => {
 
   // Sign buttoms
   const signClickHandler = (btn) => {
-    setCalc({...calc,
+    setCalc({
+      ...calc,
       sign: btn,
       num: 0,
       res: !calc.num
@@ -110,9 +111,48 @@ const App = () => {
         : !calc.res
           ? calc.num
           : toLocaleString(math(Number(removeSpaces(calc.res)), Number(removeSpaces(calc.num)), calc.sign)),
-      
+
     });
   }
+
+
+  // Listening keyboard keys and do action
+  useEffect(() => {
+    const keyDownHandler = event => {
+      
+      console.log('User pressed: ', event.key);
+
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        equalsClickHandler();
+      }
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        resetClickHandler();
+      }
+      if (Number(event.key) >= 0 && Number(event.key) <= 9 ) {
+        event.preventDefault();
+        numClickHandler(event.key);
+      }
+      if (event.key === "+" || event.key === "-" || event.key === "/" || event.key === "*" ) {
+        event.preventDefault();
+        signClickHandler(event.key);
+      }
+      if (event.key === '.') {
+        event.preventDefault();
+        commaClickHandler(event.key);
+      }
+
+    };
+
+    document.addEventListener('keydown', keyDownHandler);
+
+    return () => {
+      document.removeEventListener('keydown', keyDownHandler);
+    };
+  });
+
+
 
 
   return (
@@ -141,6 +181,7 @@ const App = () => {
 
         }}
         />
+        {console.log(calc)}
 
       </ButtonBox>
     </Wrapper>
