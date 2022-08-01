@@ -1,23 +1,8 @@
 # Assignment 2
 
-Description...
+Simple calculator project.
 
-
-## Difference between arrow function and regular function :
-
-```
-// Regular function
-
-function name(input){
-    console.log(input);
-}
-
-// Arrow function
-
-const name = (input) => {
-    console.log(input);
-}
-```
+This project includes four base operations and as well as reads numbers from the keyboard.
 
 <br>
 
@@ -41,5 +26,25 @@ const name = (input) => {
 
 <br>
 
-Screenshot
+## Difference between arrow function and regular function :
+
+```
+// Regular function
+
+function name(input){
+    console.log(input);
+}
+
+// Arrow function
+
+const name = (input) => {
+    console.log(input);
+}
+```
+
+<br>
+
+![Screenshot](https://i.imgur.com/FI7Rsi8.jpg "Screenshot")
+
+
 
