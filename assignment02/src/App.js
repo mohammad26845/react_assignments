@@ -16,7 +16,7 @@ import Button from "./component/Button";
 
 const App = () => {
 
-  // Variables
+  // Variables (Set state)
   let [calc, setCalc] = useState({
     sign: "",
     num: 0,
@@ -32,25 +32,40 @@ const App = () => {
     return String(num).replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, "$1 ");
   }
   const math = (a, b, sign) => {
-    return sign === "+" ? a + b : sign === "-" ? a - b : sign === "X" ? a * b : a / b;
+    return sign === "+" ? a + b : sign === "-" ? a - b : sign === "*" ? a * b : a / b;
   }
 
 
-
-
+  // Sign Inverter function
   const invertClickHandler = () => {
-    console.log("");
+    setCalc({
+      ...calc,
+      num: calc.num ? toLocaleString(removeSpaces(calc.num) * -1) : 0,
+      res: calc.res ? toLocaleString(removeSpaces(calc.res) * -1) : 0,
+    });
   }
 
-  const percentClickHandler = () => {
-    console.log("");
-  }
 
-
-
-  // Reset and clear memory 
+  // Reset and clear memory (Escape key)
   const resetClickHandler = () => {
     setCalc({ sign: "", num: 0, res: 0, });
+  }
+
+  // Removeing last number (BackSpace key)
+  const backspaceHandler = () => {
+    if (calc.num) {
+
+      if (removeSpaces(calc.num).length === 1) {
+        setCalc({ ...calc, num: 0 });
+      }
+      else {
+        let tempNumber = removeSpaces(calc.num).slice(0, -1);
+        tempNumber = toLocaleString(tempNumber);
+
+        // Update values (number and result)
+        setCalc({ ...calc, num: tempNumber });
+      }
+    }
   }
 
   // Comma for decimal numbers
@@ -99,7 +114,6 @@ const App = () => {
     }
   }
 
-
   // Sign buttoms
   const signClickHandler = (btn) => {
     setCalc({
@@ -111,7 +125,6 @@ const App = () => {
         : !calc.res
           ? calc.num
           : toLocaleString(math(Number(removeSpaces(calc.res)), Number(removeSpaces(calc.num)), calc.sign)),
-
     });
   }
 
@@ -119,28 +132,30 @@ const App = () => {
   // Listening keyboard keys and do action
   useEffect(() => {
     const keyDownHandler = event => {
-      
-      console.log('User pressed: ', event.key);
 
       if (event.key === 'Enter') {
         event.preventDefault();
         equalsClickHandler();
       }
-      if (event.key === 'Escape') {
+      else if (event.key === 'Escape') {
         event.preventDefault();
         resetClickHandler();
       }
-      if (Number(event.key) >= 0 && Number(event.key) <= 9 ) {
+      else if (Number(event.key) >= 0 && Number(event.key) <= 9) {
         event.preventDefault();
         numClickHandler(event.key);
       }
-      if (event.key === "+" || event.key === "-" || event.key === "/" || event.key === "*" ) {
+      else if (event.key === "+" || event.key === "-" || event.key === "/" || event.key === "*") {
         event.preventDefault();
         signClickHandler(event.key);
       }
-      if (event.key === '.') {
+      else if (event.key === '.') {
         event.preventDefault();
         commaClickHandler(event.key);
+      }
+      else if (event.key === "Backspace") {
+        event.preventDefault();
+        backspaceHandler();
       }
 
     };
@@ -151,8 +166,6 @@ const App = () => {
       document.removeEventListener('keydown', keyDownHandler);
     };
   });
-
-
 
 
   return (
@@ -169,16 +182,13 @@ const App = () => {
             ? resetClickHandler()
             : btn === "+-"
               ? invertClickHandler()
-              : btn === "%"
-                ? percentClickHandler()
-                : btn === "="
-                  ? equalsClickHandler()
-                  : btn === "/" || btn === "*" || btn === "-" || btn === "+"
-                    ? signClickHandler(btn)
-                    : btn === "."
-                      ? commaClickHandler(btn)
-                      : numClickHandler(btn);
-
+              : btn === "="
+                ? equalsClickHandler()
+                : btn === "/" || btn === "*" || btn === "-" || btn === "+"
+                  ? signClickHandler(btn)
+                  : btn === "."
+                    ? commaClickHandler(btn)
+                    : numClickHandler(btn);
         }}
         />
 

@@ -4,11 +4,9 @@ button {
     box-shadow: #6b6b6b 2px 2px 6px 0px;
 }
 
-.operator{
-    
-}
 
 .equal-sign {
-    height: 98%;
-    grid-area: 2 / 4 / 6 / 4;
+    height: 100%;
+    grid-area: 3 / 4 / 6 / 4;
 }
+

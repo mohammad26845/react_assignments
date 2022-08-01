@@ -12,6 +12,7 @@ const Button = ({ onClick }) => {
             <button onClick={onClick} type="button" value="8" className="btn btn-light ">8</button>
             <button onClick={onClick} type="button" value="9" className="btn btn-light ">9</button>
 
+            <button onClick={onClick} type="button" className=" btn btn-info" value="+-">+-</button>
 
             <button onClick={onClick} type="button" value="4" className="btn btn-light ">4</button>
             <button onClick={onClick} type="button" value="5" className="btn btn-light ">5</button>
@@ -27,7 +28,7 @@ const Button = ({ onClick }) => {
             <button onClick={onClick} type="button" className="btn btn-secondary" value=".">.</button>
             <button onClick={onClick} type="button" className="btn btn-danger btn-sm" value="all-clear">AC</button>
 
-            <button onClick={onClick} type="button" className="equal-sign btn btn-default" value="=">=</button>
+            <button onClick={onClick} type="button" className="equal-sign btn btn-light" value="=">=</button>
         </>
     );
 };
