@@ -7,7 +7,7 @@ This project includes four base operations and as well as reads numbers from the
 <br>
 
 <p align="center">
-  <img width="400" src="https://i.imgur.com/ScfcFrt.gif">
+  <img src="./Screenrecord.gif">
 </p>
 
 <br>
@@ -51,13 +51,9 @@ const name = (input) => {
 
 ## Installation
 
-1. `git clone https://github.com/madzadev/calculator.git`
+1. `npm i`
 
-2. `cd calculator`
-
-3. `npm install`
-
-4. `npm start`
+2. `npm start`
 
 <br>
 
