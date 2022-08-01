@@ -1,14 +1,20 @@
 # Assignment 2
 
-Simple calculator project.
+Simple calculator project with React.
 
 This project includes four base operations and as well as reads numbers from the keyboard.
 
 <br>
 
+<p align="center">
+  <img width="400" src="https://i.imgur.com/ScfcFrt.gif">
+</p>
+
+<br>
+
 ## Script Features :
 
-- Arrow functions
+- Using Arrow functions
 
 - Usign states and set state
 
@@ -30,13 +36,11 @@ This project includes four base operations and as well as reads numbers from the
 
 ```
 // Regular function
-
 function name(input){
     console.log(input);
 }
 
 // Arrow function
-
 const name = (input) => {
     console.log(input);
 }
@@ -44,9 +48,22 @@ const name = (input) => {
 
 <br>
 
-<p align="center">
-  <img width="460" height="300" src="https://i.imgur.com/ScfcFrt.gif">
-</p>
+
+## Installation
+
+1. `git clone https://github.com/madzadev/calculator.git`
+
+2. `cd calculator`
+
+3. `npm install`
+
+4. `npm start`
+
+<br>
+
+## Contributions
+
+Any feature requests and pull requests are welcome!
 
 
 
