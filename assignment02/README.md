@@ -6,7 +6,10 @@ This project includes four base operations and as well as reads numbers from the
 
 <br>
 
-![Calculator Screenshot](https://i.imgur.com/dvgkwOa.gif)
+## Screen Record
+
+![Screenrecord](./Screenrecord.gif "Screenrecord")
+
 
 <br>
 
@@ -24,7 +27,9 @@ This project includes four base operations and as well as reads numbers from the
 
 - Listening keyboard keys
 
-- Convert string to integer :)
+- Convert string to integer
+    - Number ()
+    - parseInt()
 
 - Foldering the components
 

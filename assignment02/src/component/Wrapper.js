@@ -9,6 +9,7 @@ const Wrapper = ({ children }) => {
                 {children}
 
             </div>
+            
         </div>
     );
 }

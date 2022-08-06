@@ -169,31 +169,39 @@ const App = () => {
 
 
   return (
-    <Wrapper>
-      <Screen value={calc.num ? calc.num : calc.res} />
-      <ButtonBox>
-        <Button onClick={(e) => {
+    <>
 
-          // Convert value to string or integer
-          let btn = e.target.value
+      <Wrapper>
+        <Screen value={calc.num ? calc.num : calc.res} />
+        <ButtonBox>
+          <Button onClick={(e) => {
 
-          // Checking input button
-          btn === "all-clear"
-            ? resetClickHandler()
-            : btn === "+-"
-              ? invertClickHandler()
-              : btn === "="
-                ? equalsClickHandler()
-                : btn === "/" || btn === "*" || btn === "-" || btn === "+"
-                  ? signClickHandler(btn)
-                  : btn === "."
-                    ? commaClickHandler(btn)
-                    : numClickHandler(btn);
-        }}
-        />
+            // Convert value to string or integer
+            let btn = e.target.value
 
-      </ButtonBox>
-    </Wrapper>
+            // Checking input button
+            btn === "all-clear"
+              ? resetClickHandler()
+              : btn === "+-"
+                ? invertClickHandler()
+                : btn === "="
+                  ? equalsClickHandler()
+                  : btn === "/" || btn === "*" || btn === "-" || btn === "+"
+                    ? signClickHandler(btn)
+                    : btn === "."
+                      ? commaClickHandler(btn)
+                      : numClickHandler(btn);
+          }}
+          />
+
+        </ButtonBox>
+      </Wrapper>
+
+      <div className='text-center'>
+        <p>React version : {React.version}</p>
+      </div>
+      
+    </>
   );
 };
 
