@@ -6,7 +6,13 @@ It should be noted that the one list is not saved in any database and will be de
 
 <br>
 
-## Script Features :
+## Screen Record
+
+![Screenshot](./Screenshot.jpg "Screenshot")
+
+<br>
+
+## Script Features
 - Reading the textbox value
 
 - Changing the textbox value
@@ -23,5 +29,18 @@ It should be noted that the one list is not saved in any database and will be de
 
 <br>
 
-![Screenshot](./Screenshot.jpg "Screenshot")
+
+## Installation
+
+1. `npm i`
+
+2. `npm start`
+
+<br>
+
+## Contributions
+
+Any feature requests and pull requests are welcome!  :white_check_mark:
+
+
 
