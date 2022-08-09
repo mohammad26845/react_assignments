@@ -1,12 +1,10 @@
 # Assignment 1
 
-<a href="https://github-pvgnz5.stackblitz.io" target="_blank">Show Demo</a>
-
-<br>
-
 We create a default list of books in this project. We can also add a new book containing the name and number of pages to that list.
 
 It should be noted that the one list is not saved in any database and will be deleted added data after a hard refresh.
+
+**<a href="https://github-pvgnz5.stackblitz.io" target="_blank">Show Demo</a>**
 
 <br>
 
@@ -17,6 +15,7 @@ It should be noted that the one list is not saved in any database and will be de
 <br>
 
 ## Script Features
+
 - Reading the textbox value
 
 - Changing the textbox value
@@ -32,7 +31,6 @@ It should be noted that the one list is not saved in any database and will be de
 - Using "useRef" and "useState"
 
 <br>
-
 
 ## Installation
 
