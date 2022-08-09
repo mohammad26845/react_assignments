@@ -4,6 +4,12 @@ This is a simple project of an e-commerce shop that is created with two methods 
 
 The top part of this project is a simple example of (Pure component) and (Should component).
 
+**<a href="https://github-d7kdbh.stackblitz.io" target="_blank">Show Demo</a>**
+
+<br>
+
+
+
 <br>
 
 ## Screen Record
