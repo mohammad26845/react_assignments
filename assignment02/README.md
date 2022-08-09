@@ -4,6 +4,8 @@ Simple calculator project with React.
 
 This project includes four base operations and as well as reads numbers from the keyboard.
 
+**<a href="https://github-zyjnuv.stackblitz.io" target="_blank">Show Demo</a>**
+
 <br>
 
 ## Screen Record
